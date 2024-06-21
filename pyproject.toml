@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sofa"
+description = ""
+version = "0.0.1"
+requires-python = ">=3.10"
+authors = [
+    { name = "luxinyu1", email = "luxinyu221@mails.ucas.ac.cn" }
+]
+dependencies = [
+  "fschat==0.2.28",
+  "transformers==4.33.1",
+  "accelerate==0.24.0",
+  "torch==2.0.1",
+  "vllm==0.2.0",
+  "sentencepiece",
+  "openai==0.28.1",
+  "scipy",
+  "tenacity",
+  "tensorboard",
+  "tensorboardX",
+  "string2string",
+  "protobuf==3.20.0",
+  "gradio==3.41.0",
+  "pydantic==1.9.0",
+  "seaborn",
+  "num2words"
+]
+
+[project.optional-dependencies]
+tests = [
+  "pytest",
+  "pre-commit"
+]
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
