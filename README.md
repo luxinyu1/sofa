@@ -34,7 +34,7 @@ Evaluate the models use the ```./scripts/eval_${benchmark_name}.sh``` under the 
 For few-shot experiments, we recommend setting up a new environment and installing the `lm-evaluation-harness` test suite:
 
 ```
-conda create lm_eval python=3.10
+conda create -n lm_eval python=3.10
 conda activate lm_eval
 wget --no-check-certificate https://github.com/EleutherAI/lm-evaluation-harness/archive/refs/tags/v0.4.0.zip
 unzip v0.4.0.zip && mv lm-evaluation-harness-0.4.0/ lm-evaluation-harness/
